@@ -33,15 +33,19 @@ Setup Instructions
 1. Clone the repository:
 git clone https://github.com/nadaselham/hybrid-cnn-tcn.git
 cd hybrid-cnn-tcn
+
 2. Install dependencies:
 pip install -r requirements.txt
+
 3. Download GolfDB dataset from official GitHub repo and place it under:
   data/golfdb_dataset/
 ├── train/
 ├── val/
-5. To train the model:
+
+4. To train the model:
 python train.py --config configs/config.yaml
-6. To evaluate a trained model:
+
+5. To evaluate a trained model:
 python validate.py --checkpoint outputs/best_model.pth
 
 
