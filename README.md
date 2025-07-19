@@ -7,6 +7,21 @@ This repository contains the full implementation of our hybrid CNN–TCN model f
 
 Our method extracts spatial features using a CNN backbone (ResNet-18/EfficientNet) and models temporal dependencies using a Temporal Convolutional Network (TCN). This combination is particularly effective for analyzing complex biomechanical motions in the GolfDB dataset.
 
+## 📚 Dataset Information
+
+- Dataset: [GolfDB](https://github.com/harvitronix/golfdb) – A curated golf swing video dataset annotated with key event frames.
+- Dataset DOI/URL: [https://github.com/harvitronix/golfdb](https://github.com/harvitronix/golfdb)
+  
+## 🧠 Code Information
+
+Modules:
+
+- `models/`: Contains CNN, TCN, and hybrid fusion architecture
+- `data/`: Dataset loader, transforms, and utilities
+- `experiments/`: Training, evaluation, logging, and config
+- `metrics/`: Evaluation metrics (MAE, PCK, etc.)
+- `visualizations/`: Image sequence and keypoint overlay tools
+
 Summary
 
 - Spatial encoder: CNN (ResNet or EfficientNet)
@@ -29,7 +44,7 @@ golfdb-keypoint-hybrid/
 ├── requirements.txt # Dependency list
 └── README.md # This file
 
-Setup Instructions
+## 🚀 Usage Instructions
 1. Clone the repository:
 git clone https://github.com/nadaselham/hybrid-cnn-tcn.git
 cd hybrid-cnn-tcn
