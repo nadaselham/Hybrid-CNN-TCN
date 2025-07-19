@@ -1,0 +1,12 @@
+# inference.py — Run inference on single video or batch of clips
+import torch
+from models.hybrid_model import HybridModel
+from utils.visualization import overlay_keypoints
+
+def run_inference(video_tensor):
+    model = HybridModel()
+    model.load_state_dict(torch.load("outputs/best_model.pth"))
+    model.eval()
+    with torch.no_grad():
+        predictions = model(video_tensor.cuda())
+    return predictions
