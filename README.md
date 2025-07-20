@@ -9,8 +9,8 @@ Our method extracts spatial features using a CNN backbone (ResNet-18/EfficientNe
 
 ## 📚 Dataset Information
 
-- Dataset: [GolfDB](https://github.com/harvitronix/golfdb) – A curated golf swing video dataset annotated with key event frames.
-- Dataset DOI/URL: [https://github.com/harvitronix/golfdb](https://github.com/harvitronix/golfdb)
+- Dataset: [GolfDB](https://github.com/wmcnally/golfdb) – A curated golf swing video dataset annotated with key event frames.
+- Dataset DOI/URL: [https://github.com/harvitronix/golfdb]((https://github.com/wmcnally/golfdb))
   
 ## 🧠 Code Information
 
