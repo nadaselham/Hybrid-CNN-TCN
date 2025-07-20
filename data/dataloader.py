@@ -47,3 +47,5 @@ def get_validation_loader(batch_size=16):
     ])
     val_dataset = GolfDBDataset("data/golfdb_dataset/val", transform=transform)
     return DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=2)
+
+
